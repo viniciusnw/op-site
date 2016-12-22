@@ -1,0 +1,785 @@
+body{
+    font-family: BebasNeue;
+    color: #30292F;
+    overflow-x: hidden
+}
+
+a:focus, a:hover{
+    text-decoration: none;
+}
+
+.navbar{
+    margin: 0;
+    background: url(/assets/site/img/fundo_sobre.jpg);
+    background-position-y: 500px;
+    box-shadow: rgba(0,0,0,0.8) 0px 0px 11px;
+    border-radius: 0 0 5px 5px;
+}
+
+.container-fluid{
+    max-width: 1000px;
+    padding: 0;
+}
+
+#navLeft{
+    float: left;
+    font-size: 40px;
+}
+
+#navLeft:hover{
+    color: #daa520;
+}
+
+#navRight{
+    float: right;
+    font-family: BebasNeueRegular;
+}
+
+#navRight ul li{
+    text-align: center;
+    font-size: 14pt;
+}
+
+#navRight ul li .fa{
+    margin-right: 1px;
+    position: absolute;
+    opacity: 0;
+    transition: transform .3s, opacity .2s;
+    font-size: 14pt;
+}
+
+ #navRight ul li:hover .fa
+,#navRight ul li.ativo .fa {
+    opacity: 1;
+    transform: translatex(-30px);
+}
+
+#navRight ul li a{
+    color: #000;
+    margin: 0;
+    padding: 41px;
+    padding-left: 20px;
+}
+
+#apresentacao{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: url(/assets/site/img/topo-1.jpg) center no-repeat fixed;
+    background-size: cover;
+    min-height: 650px;    
+    transition: background 0.7s ease-in-out;
+}
+
+#apresentacao #title{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#fraseApresentacao{
+    margin-bottom: 50px;
+}
+
+#fraseApresentacao h1{
+    color: #daa520;
+    margin: 0;
+    font-size: 100px;
+    letter-spacing: -2px;
+    text-shadow: 1px 1px #1a1a1a,
+                 2px 2px #1a1a1a,
+                 3px 3px #1a1a1a,
+                 4px 4px #1a1a1a,
+                 5px 5px #1a1a1a,
+                 6px 6px #1a1a1a,
+                 7px 7px #1a1a1a,
+                 8px 8px #1a1a1a,
+                 9px 9px #1a1a1a,
+                 10px 10px #1a1a1a,
+                 11px 11px #1a1a1a,
+                 12px 12px #1a1a1a,
+                 13px 13px #1a1a1a,
+                 14px 14px #1a1a1a,
+                 15px 15px #1a1a1a;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#fraseApresentacao h1 span{
+    font-size: 65px;
+}
+
+#fraseApresentacao #borda{
+    border-bottom: 4px solid #daa520;
+    box-shadow: 1px 1px #1a1a1a,
+                2px 2px #1a1a1a,
+                3px 3px #1a1a1a,
+                4px 4px #1a1a1a,
+                5px 5px #1a1a1a,
+                6px 6px #1a1a1a,
+                7px 7px #1a1a1a,
+                8px 8px #1a1a1a,
+                9px 9px #1a1a1a;
+    height: 5px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#apresentacao #subTitle h2{
+    margin: 0;
+    font-family: montserrat;
+    text-shadow: 4px 2px 0px rgba(0, 0, 0, 0.55);
+    color: #f5f5f5;
+    font-size: 29px;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+#apresentacao #subTitle h2 span{
+    font-weight: bold;
+    color: #daa520;
+}
+
+#apresentacao #title button{
+    margin-top: 40px;
+    font-size: 16pt;
+    width: 380px;
+    height: 50px;
+    font-family: montserrat;
+    background-color: #FF9640;
+    border: 0;
+    box-shadow: 0px 5px #D9722B;
+    color: #000;
+    display: inline-block;
+    line-height: 39px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 120ms linear, box-shadow 80ms linear;
+}
+
+#apresentacao #title button:hover{
+    box-shadow: 0 0 #122146;
+    transform: translateY(5px);
+}
+
+section.sobre{
+    background: url("/assets/site/img/fundo_sobre.jpg");
+    padding-bottom: 100px;
+    background-size: cover;
+}
+
+section.sobre .container{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+section.sobre .container header{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+section.sobre header h1{
+    font-size: 50pt;
+    text-shadow: 4px 3px 0px #f5f5f5, 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+section.sobre article .row{
+   margin-top: 40px;
+}
+
+section.sobre article .icon{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30pt;
+}
+
+section.sobre article .icon .avatar{
+    font-size: 60pt;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border-radius: 60px;
+    margin: 0 auto;
+}
+
+section.sobre article .avatar i{
+   margin-top: 20px;
+}
+
+.sobreTitle:before, .sobreTitle:after{
+    opacity: 0;
+    position: absolute;
+    transition: transform .3s, opacity .2s; 
+}
+
+.sobreTitle:before{
+    content: "{";
+}
+
+.sobreTitle:after{
+    content: "}";
+    transform: translatex(-20px);
+}
+
+section.sobre article .sobreCol:hover .sobreTitle:before{
+    opacity: 1;
+    transform: translatex(-20px);
+}
+
+section.sobre article .sobreCol:hover .sobreTitle:after{
+    opacity: 1;
+    transform: translatex(10px);
+}
+
+section.sobre article .desc{
+   text-align: center;
+   font-family: Folks-Normal;
+   font-size: 12pt;
+}
+
+section.sobre article .tecnologias .tecnoItens ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+
+section.sobre article .tecnologias .tecnoItens ul li{
+    display: inline;
+    padding: 15px 20px;
+    padding-left: 26px;
+    border: 1px #30292F solid;
+    border-radius: 10px;
+    margin-right: 6px;
+    font-size: 20pt;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+section.sobre article .tecnologias .tecnoItens ul li.active{
+   background: goldenrod;
+}
+
+section.sobre .descTecnologias{
+    margin-top: 5px;
+    padding: 10px 15px;
+}
+
+section.sobre .descTecnologias .item{
+    font-size: 11pt;
+    font-family: Raleway-Black;
+    display: none;
+}
+
+section.sobre .descTecnologias .active{
+    display: block;
+}
+
+section.sobre .descTecnologias .item .descTitle div{
+    border: 1px black solid;
+    background: #30292F;
+    padding: 20px 20px;
+    display: inline-block;
+    border-radius: 40px;
+    color: white;
+}
+
+section.sobre #exampleCodes div{
+    display: none;
+    position: absolute;
+    transform: translatex(-100px);
+}
+
+@keyframes exampleCodes{
+    from { 
+        transform: translatex(-90px);
+        opacity: 0;
+    }
+    to { 
+        transform: translatex(10px); 
+        opacity: 1;
+    }
+}
+section.sobre #exampleCodes div.active{
+    display: block;
+    animation: exampleCodes 0.3s linear;
+    transform: translatex(10px);
+}
+
+section.sobre #exampleCodes{
+    min-height: 387px;
+}
+
+section.sobre #exampleCodes .web{
+    background: url("/assets/site/img/mac-iphone.png") bottom center no-repeat;
+    height: 387px;
+    width: 100%;
+    background-size: cover;
+    background-size: auto 387px;
+}
+section.sobre #exampleCodes .desktop{
+    background: url("/assets/site/img/imac.png") bottom center no-repeat;
+    height: 387px;
+    width: 100%;
+    background-size: cover;
+    background-size: auto 387px;
+}
+section.sobre #exampleCodes .mobile{
+    background: url("/assets/site/img/mobiles.png") bottom center no-repeat;
+    height: 387px;
+    width: 100%;
+    background-size: auto 387px;
+}
+
+#divisao{
+    height: 50px;
+    background: url("/assets/site/img/edge-1.png");
+    margin-top: -100px;
+}
+
+section.servicos{
+    background: #684E32;
+}
+
+section.servicos .container header,
+section.contato .container header{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+section.servicos header h1{
+    color: #f5f5f5;
+    font-size: 60pt;
+    text-shadow: 4px 3px 0px #30292F, 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+section.servicos header h2{
+    color: #f5f5f5;
+    font-size: 20pt;
+    font-weight: 200;
+    margin-top: 0;
+    letter-spacing: 6px;
+}
+
+section.servicos .servicos .gridbox{
+    background: url("/assets/site/img/pattern-1.png") #30292F;
+    margin: 60px 0 30px 0;
+    padding: 20px;
+    text-align: center;
+    color: #30292F;
+    border-radius: 5px;
+}
+
+section.servicos .servicos .gridbox .topo{
+    margin: -80px 0 0 0;
+}
+
+section.servicos .servicos .gridbox .topo .fa{
+    background: #f5f5f5;
+    font-size: 64px;
+    color: #684E32;
+    width: 120px;
+    height: 120px;
+    line-height: 100px;
+    border: 10px solid #684E32;
+    border-radius: 50%;
+    transition: transform 300ms linear;
+}
+
+section.servicos .servicos .gridbox:hover .topo .fa{
+    background: #684E32;
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+    transform: rotate(360deg);
+}
+
+#divisao1{
+    height: 50px;
+    background: url("/assets/site/img/edge-2.jpg");
+}
+
+section.cases{
+    background: goldenrod;
+}
+
+section.cases header h1{
+    color: #f5f5f5;
+    font-size: 60pt;
+    text-shadow: 4px 3px 0px #684E32, 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+section.cases header h2{
+    color: #f5f5f5;
+    font-size: 20pt;
+    font-weight: 200;
+    margin-top: 0;
+    letter-spacing: 6px;
+}
+
+section.cases .containerCases{
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+section.cases .item{
+    width: 100%;
+    height: 400px;
+    padding: 0 120px;
+}
+
+section.cases .item .descItem{
+    float: left;
+    margin-top: 60px;
+}
+
+section.cases .item .descItem h1{
+    font-size: 35pt;
+}
+
+section.cases .item .descItem p{
+    font-family: Raleway-Black;
+    margin-bottom: 40px;
+}
+
+section.cases .item .descItem a{
+    color: #30292F;
+}
+section.cases .item .descItem a:active{
+    color: #30292F;
+}
+
+section.cases .item .descItem .btnItem{
+    width: 300px;
+    height: 120px;
+    background: url("/assets/site/img/button-.png");
+    font-size: 25pt;
+    float: left;
+}
+
+section.cases .item .descItem .btnItem .btnIcon{
+    display: inline-block;
+    position: relative;
+    top: 35px;
+    left: 45px;
+}
+
+section.cases .item .descItem .btnItem .btnText{
+    display: inline-block;
+    position: relative;
+    top: 35px;
+    left: 90px;
+}
+
+section.cases .item .ImagemItem{
+    float: right;
+    margin-top: 80px;
+}
+
+section.cases .item .ImagemItem img{
+    width: 400px;
+}
+
+section.cases .owl-controls .owl-prev,
+section.cases .owl-controls .owl-next{
+    position: absolute;
+    top: 40%;
+}
+
+section.cases .owl-controls .owl-prev{
+    left: 0;
+}
+
+section.cases .owl-controls .owl-next{
+    right: 0;
+}
+
+section.cases .owl-theme .owl-controls .owl-buttons div{
+    background: none;
+}
+
+#divisao5{
+    border-width: 0 1349px 100px 0;
+    border-style: solid dashed solid solid;
+    border-color: rgba(0, 0, 0, 0) goldenrod rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    background: #000;
+    /*width: 0px;
+    height: 0px;*/
+}
+
+#depoimentos{
+    background: #000; 
+    padding: 0 0 30px 0;
+}
+
+#depoimentos h1{
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 60pt;
+    text-shadow: 4px 3px 0px #333, 9px 8px 0px rgba(104, 78, 50, 0.15);
+    margin: 0;
+}
+
+@keyframes cidade {
+    from { background-position: 0 100%; }
+    to { background-position: -2732px 100%;}
+}
+#frases{
+    background: url("/assets/site/img/cidade.png") repeat-x #000;
+    background-position: bottom;
+    animation: cidade 30s linear infinite;
+    color: #f5f5f5;
+    font-weight: 200;
+    font-family: Raleway-Black;
+    font-size: 13pt;
+    height: 440px;
+}
+
+@keyframes carro {
+    from { background-position: 0 0; }
+    to { background-position: 0 -2px;}
+}
+#frases #carro{
+    background: url("/assets/site/img/carro.png") no-repeat;
+    width: 220px;
+    height: 100px;
+    position: relative;
+    top: 25px;
+    left: 300px;
+    animation: carro 0.25s linear infinite;
+}
+
+@keyframes rodas {
+    from { background-position: 0 0; }
+    to { background-position: 0 1.5px; }
+}
+#frases #rodas{
+    background: url("/assets/site/img/roda.png") no-repeat;
+    width: 220px;
+    height: 100px;
+    position: relative;
+    top: -78px;
+    left: 300px;
+    animation: rodas 0.25s linear infinite;
+}
+
+#frases .containerFrases{
+    padding: 0;
+    padding: 20px 0;
+}
+
+#frases #frasesCarousel .item{
+    height: 220px;
+}
+
+#frases #frasesCarousel .item .fraseTitle,
+#frases #frasesCarousel .item .fraseContainer,
+#frases #frasesCarousel .item .fraseAutor{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+#frases #frasesCarousel .owl-page span{
+    background: none;
+    border: 1px #fff solid;
+}
+#frases #frasesCarousel .active span{
+    background: #fff;
+    border: 1px #000 solid;
+}
+
+#frases #frasesCarousel .item .fraseTitle{
+    margin-bottom: 20px;
+    font-size: 30pt;
+}
+
+#frases #frasesCarousel .item .fraseAutor{
+    border-top: 2px solid #f5f5f5;
+    margin-top: 15px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#divisao3{
+   
+}
+
+section.contato{
+    background: url("/assets/site/img/fundo_sobre.jpg");
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+section.contato .container header{
+    margin-bottom: 80px;
+}
+
+section.contato header h1{
+    color: #30292F;
+    font-size: 50pt;
+    text-shadow: 4px 3px 0px #f5f5f5, 9px 8px 0px rgba(0, 0, 0, 0.15); 
+}
+
+section.contato .containerContatos .orcamento,
+.formulario {
+    margin-bottom: 60px;
+}
+
+section.contato .containerContatos h1{
+    font-size: 21pt;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-family: BebasNeueRegular;
+}
+
+section.contato .containerContatos .orcamento p,
+.formulario p,
+section.contato .containerContatos .contatos div{
+    font-family: Raleway-Black;
+    font-size: 12pt;
+}
+
+section.contato .containerContatos .btn{
+    margin: 0;
+    margin-top: 8px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    width: 231px;
+}
+
+section.contato .containerContatos .contatos div{
+    margin-bottom: 30px;
+}
+
+
+#divisao4{
+
+}
+
+footer{
+    color: #f5f5f5;
+    padding: 40px 0;
+    background: #070707;
+    min-height: 260px;
+}
+
+footer .container{
+    padding: 0 15px;
+}
+
+footer .container .endereco{
+    background: url("/assets/site/img/map-img.png");
+    background-size: cover;
+}
+
+footer .container .endereco h3,
+footer .container .redesSociais h3,
+footer .container .clientes h3{
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: BebasNeueRegular;
+}
+
+footer .redesSociais .fb{
+    background: url("/assets/site/img/social-icon-facebook-a.png");
+}
+footer .redesSociais .fb:hover{
+    background: url("/assets/site/img/social-icon-facebook-b.png");
+}
+
+footer .redesSociais .ig{
+    background: url("/assets/site/img/social-icon-instagram-a.png");
+}
+footer .redesSociais .ig:hover{
+    background: url("/assets/site/img/social-icon-instagram-b.png");
+}
+
+footer .redesSociais .tw{
+    background: url("/assets/site/img/social-icon-twitter-a.png");  
+}
+footer .redesSociais .tw:hover{
+    background: url("/assets/site/img/social-icon-twitter-b.png");
+}
+
+footer .redesSociais .socialIcons{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 45px;
+    margin-left: 15px;
+    transition: background 350ms, background-size 230ms;
+    border-radius: 4px;
+}
+footer .redesSociais .icons a:first-child .socialIcons{
+    margin-left: 0;
+}
+footer .redesSociais .socialIcons:hover{
+    background-size: 50px;
+}
+
+footer .firstLetter{
+    color: #daa520;
+}
+
+footer .secondWord{
+    font-family: BebasNeueLight;
+}
+
+footer .container .endereco p{
+    font-family: Raleway-Black;
+    font-size: 12pt;
+}
+
+.copyright{
+    padding: 20px 100px;
+    background: #1f1f1f;
+    color: #f5f5f5;
+    font-family: Raleway-Black;
+}
+
+.copyright .backToTop{
+    font-size: 20pt;
+    cursor: pointer;
+}
+
+.copyright .backToTop .seta{
+    width: 17px;
+    height: 27px;
+    background: url("/assets/site/img/back-to-top.png") no-repeat;
+    background-size: 17px 47px;
+    transition: all .2s ease .1s;
+    background-position: 0 9px;
+    margin: 0 auto;
+}
+
+.copyright .backToTop:hover .seta{
+    color: #daa520;
+    background-position: 0 -23px;
+}
+
+.copyright .backToTop .texto{
+    font-size: 8pt;
+}
+
+.copyright .copy{
+    font-size: 10pt;
+    padding-top: 4px;
+}
+
+.copyright .copy a{
+    color: #daa520;
+}
+    
+.iconFa{
+    text-align: center;
+    width: 28px;
+}

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Folks-Normal";
+    src: url("/assets/site/fonts/Folks/Folks-Normal.ttf");
+}
+@font-face {
+    font-family: "Raleway-Black";
+    src: url("/assets/site/fonts/Raleway/Raleway-Medium.ttf");
+}
+@font-face {
+    font-family: "BebasNeue";
+    src: url("/assets/site/fonts/BebasNeue/BebasNeue-Bold.otf");
+}
+@font-face{
+    font-family: "BebasNeueLight";
+    src: url("/assets/site/fonts/BebasNeue/BebasNeue-Light.otf");
+}
+@font-face{
+    font-family: "BebasNeueRegular";
+    src: url("/assets/site/fonts/BebasNeue/BebasNeue-Regular.otf");
+}
+
+@font-face{
+    font-family: "montserrat";
+    src: url("/assets/site/fonts/Montserrat/Montserrat-Regular.otf");
+}
